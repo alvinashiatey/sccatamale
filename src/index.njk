@@ -5,13 +5,29 @@ path: home
 pageCriticalStyles: 
   - css/home.css
 ---
+<div class="images__contaiener">
+  <div class="images">
+    <img src="/static/img/image 1.png" alt="scca">
+  </div>
+  <div class="images">
+    <img src="/static/img/image 2.png" alt="scca">
+  </div>
+  <div class="images">
+    <img src="/static/img/image 3.png" alt="scca">
+  </div>
+</div>
 
 <div class="home">
   <div class="home__container">
-    <h1>
-     <span id="current-date">Saturday, October 2, 2021</span><br />
-     <span id="open-state">Currently closed. </span><br />
-      Opens at <span id="reopening-time">11 am</span> tomorrow.
-    </h1>
+    <div class="home-dynamic__content">  
+      <h1>
+        <span id="current-date"></span><br />
+        Currently <span id="open-state">closed.</span><br />
+        <span id="reopening-time"></span>
+      </h1>
+    </div>
+  </div>
+  <div class="home__images">
+    <p>[<span class="img__btn">image 1</span>, <span class="img__btn">image 2</span>, <span class="img__btn">image 3</span>]</p>
   </div>
 </div>

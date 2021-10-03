@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
 
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+    return DateTime.fromJSDate(dateObj, { zone: "gmt" }).toFormat(
       "dd LLL yyyy"
     );
   });
@@ -26,6 +26,11 @@ module.exports = function (eleventyConfig) {
     yaml.safeLoad(contents)
   );
 
+  // BrowserSync Watch files
+  eleventyConfig.setWatchThrottleWaitTime(695);
+  eleventyConfig.addWatchTarget("./src/static/scss/");
+  eleventyConfig.addWatchTarget("./src/static/js/");
+
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
@@ -36,7 +41,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/static/img");
 
   // Copy favicon to route of /_site
-  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/favicon");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
