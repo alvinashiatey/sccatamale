@@ -9,12 +9,14 @@ export default function homeImage() {
       imageDiv[i].style.visibility = "hidden";
     });
 
-    // on click toggle the visibility of the image
-    btn.addEventListener("click", (e) => {
-      imageDiv.forEach((div) => {
-        div.style.visibility = "hidden";
+    // check screen size if lower than 40em then hide images
+    if (window.innerWidth < 640) {
+      btn.addEventListener("click", (e) => {
+        imageDiv.forEach((div) => {
+          div.style.visibility = "hidden";
+        });
+        imageDiv[i].style.visibility = "visible";
       });
-      imageDiv[i].style.visibility = "visible";
-    });
+    }
   });
 }
