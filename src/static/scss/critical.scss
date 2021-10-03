@@ -1,0 +1,44 @@
+@import "reset";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo__wrapper {
+  position: absolute;
+  a.logo {
+    padding: 1em;
+  }
+}
+
+.footer__wrapper {
+  position: absolute;
+  bottom: 0;
+  padding-inline: 1em;
+  color: #fefefe;
+  .footer__content {
+    columns: 4;
+    .about__scca p,
+    .on-view__scca p,
+    .opening-times__scca p,
+    .information__scca p {
+      display: inline-block;
+    }
+
+    .on-view__scca p,
+    .opening-times__scca p,
+    .information__scca p {
+      text-align: right;
+      width: 100%;
+    }
+    .information__scca {
+      a {
+        text-decoration: none;
+        color: #fefefe;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
