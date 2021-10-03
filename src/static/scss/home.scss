@@ -22,9 +22,9 @@
 }
 .home {
   color: #fefefe;
-  height: 35rem;
+  height: calc(80vh - 100px);
   &__container {
-    height: 100%;
+    height: 80%;
     display: grid;
     place-content: center;
     h1 {
