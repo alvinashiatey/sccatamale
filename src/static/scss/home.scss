@@ -43,11 +43,16 @@
     height: 80%;
     display: grid;
     place-content: center;
+    height: 100%;
     h1 {
       font-size: 4rem;
       font-weight: normal;
       line-height: 1;
       text-align: center;
+      @media screen and (max-width: 40em) {
+        font-size: 3.5em;
+        padding-inline: 0.01em;
+      }
     }
   }
   &__images {
