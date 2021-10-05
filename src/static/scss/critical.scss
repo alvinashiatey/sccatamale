@@ -23,21 +23,25 @@ body {
   padding-bottom: 1em;
   color: #fefefe;
   .footer__content {
-    columns: 4;
+    display: flex;
     @media screen and (max-width: 40em) {
       margin-top: 4em;
-      columns: 1;
+      flex-direction: column;
     }
 
-    .about__scca p,
-    .on-view__scca p,
-    .opening-times__scca p,
-    .information__scca p {
-      display: inline-block;
+    .about__scca,
+    .on-view__scca,
+    .opening-times__scca,
+    .information__scca {
+      display: block;
+      width: 20rem;
+      width: 100%;
       @media screen and (max-width: 40em) {
-        text-align: center !important;
-        margin-block: 0.5em;
-        font-size: 1.5em;
+        p {
+          text-align: center !important;
+          margin-block: 0.5em;
+          font-size: 1.5em;
+        }
       }
     }
 
