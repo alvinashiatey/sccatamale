@@ -12,17 +12,17 @@ export default function homePageDate() {
   currentDate.textContent = dateString;
   if (dt.weekday < 6 || dt.weekday > 7) {
     if (dt.hour >= 20 || dt.hour < 11) {
-      openStateHtml.textContent = openingState[1];
+      openStateHtml.textContent = `Currently ${openingState[1]}`;
       reopeningTime.textContent = reopeningString;
     } else {
-      openStateHtml.textContent = openingState[0];
+      openStateHtml.textContent = `Currently ${openingState[0]}`;
     }
   } else {
     if (dt.hour >= 18 || dt.hour < 11) {
-      openStateHtml.textContent = openingState[1];
+      openStateHtml.textContent = `Currently ${openingState[1]}`;
       reopeningTime.textContent = reopeningString;
     } else {
-      openStateHtml.textContent = openingState[0];
+      openStateHtml.textContent = `Currently ${openingState[0]}`;
     }
   }
 
