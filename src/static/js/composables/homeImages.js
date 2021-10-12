@@ -2,12 +2,22 @@ export default function homeImage() {
   const imageBtn = document.querySelectorAll(".img__btn");
   const imageDiv = document.querySelectorAll(".images");
   if (!imageBtn || !imageDiv) return;
+  const randomIndex = Math.floor(Math.random() * imageDiv.length);
+  imageDiv[randomIndex].style.visibility = "visible";
+  const hideImages = () => {
+    imageDiv.forEach((image) => {
+      image.style.visibility = "hidden";
+    });
+  };
+
   imageBtn.forEach((btn, i) => {
     btn.addEventListener("mouseover", (e) => {
+      hideImages();
       imageDiv[i].style.visibility = "visible";
     });
     btn.addEventListener("mouseout", (e) => {
       imageDiv[i].style.visibility = "hidden";
+      imageDiv[randomIndex].style.visibility = "visible";
     });
   });
 
@@ -31,6 +41,7 @@ export default function homeImage() {
         imageDiv.forEach((div) => {
           div.style.visibility = "hidden";
         });
+        hideImages();
         imageDiv[i].style.visibility = "visible";
       });
     });
