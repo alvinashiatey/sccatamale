@@ -21,7 +21,9 @@ export default function homePageDate() {
   } else if (dt.weekday !== 5) {
     if (dt.hour >= 18 || dt.hour < 11) {
       openStateHtml.textContent = `Currently ${openingState[1]}`;
-      reopeningTime.textContent = reopeningString;
+      dt.weekday === 4
+        ? (reopeningTime.textContent = "Opens at 11 am on Saturday.")
+        : (reopeningTime.textContent = reopeningString);
     } else {
       openStateHtml.textContent = `Currently ${openingState[0]}`;
     }
