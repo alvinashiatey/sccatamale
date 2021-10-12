@@ -63,5 +63,28 @@
         </svg>
       </a>
     </div>
+    <div class="menu">
+      <h1 id="program__btn">PROGRAMS</h1>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar__content">
+        <div class="programs">
+          <div class="btns">
+            <h1>PROGRAMS</h1>
+            <h2 id="close__btn">[CLOSE]</h2>
+          </div>
+          <ul>
+            {% for exhibition in collections.exhibition %}
+            <li>
+              <h2>
+                <a href="{{exhibition.url}}">{{exhibition.data.title}}</a>
+              </h2>
+              <p>{{exhibition.data.description | truncate(400)}}</p>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
   </nav>
 </div>

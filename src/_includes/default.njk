@@ -27,11 +27,13 @@
     {% endfor %} {% endif %}
   </head>
   <body>
+  <div class="wrapper">
     {% include "./partials/navbar.html" %} 
     <main>
       {{ content | safe }} 
     </main>
     {% include "./partials/footer.html" %}
+  </div>
 
     <script src="/static/js/main.js"></script>
     <script src="/static/js/alpine.js"></script>

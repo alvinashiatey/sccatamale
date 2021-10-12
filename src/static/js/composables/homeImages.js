@@ -1,6 +1,7 @@
 export default function homeImage() {
   const imageBtn = document.querySelectorAll(".img__btn");
   const imageDiv = document.querySelectorAll(".images");
+  if (!imageBtn || !imageDiv) return;
   imageBtn.forEach((btn, i) => {
     btn.addEventListener("mouseover", (e) => {
       imageDiv[i].style.visibility = "visible";

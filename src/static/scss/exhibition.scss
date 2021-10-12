@@ -1,0 +1,22 @@
+.exhibition {
+  padding-inline: 1em;
+  color: #fefefe;
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    line-height: 1;
+  }
+  article {
+    columns: 3;
+    hyphens: auto;
+    p + p {
+      text-indent: 1.5rem;
+    }
+    p:last-child {
+      text-indent: 0;
+    }
+    @media screen and (max-width: 40em) {
+      columns: 1;
+    }
+  }
+}

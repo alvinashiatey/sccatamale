@@ -3,6 +3,7 @@ import { DateTime } from "luxon";
 export default function homePageDate() {
   const currentDate = document.getElementById("current-date");
   const openStateHtml = document.getElementById("open-state");
+  if (!currentDate) return;
   const openingState = ["open", "closed"];
   const reopeningTime = document.getElementById("reopening-time");
   const reopeningString = "Opens at 11 am tomorrow.";
@@ -17,13 +18,16 @@ export default function homePageDate() {
     } else {
       openStateHtml.textContent = `Currently ${openingState[0]}`;
     }
-  } else {
+  } else if (dt.weekday !== 5) {
     if (dt.hour >= 18 || dt.hour < 11) {
       openStateHtml.textContent = `Currently ${openingState[1]}`;
       reopeningTime.textContent = reopeningString;
     } else {
       openStateHtml.textContent = `Currently ${openingState[0]}`;
     }
+  } else {
+    openStateHtml.textContent = `Currently ${openingState[1]}`;
+    reopeningTime.textContent = reopeningString;
   }
 
   // use requestAnimationFrame to update the date every frame

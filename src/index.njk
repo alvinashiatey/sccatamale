@@ -19,6 +19,17 @@ pageCriticalStyles:
 
 <div class="home">
   <div class="home__container">
+    <div class="on-view">
+      {% for exhibition in collections.exhibition %}
+        {% if loop.index <= 1 %}
+          <div class="on-view__content">
+            <a href="{{ exhibition.url }}" target="_blank">
+              <h2>{{ exhibition.data.title }}</h2>
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
     <div class="home-dynamic__content">  
       <h1>
         <span id="current-date"></span><br />
@@ -26,6 +37,7 @@ pageCriticalStyles:
         <span id="reopening-time"></span>
       </h1>
     </div>
+
   </div>
   <div class="home__images">
     <p>[<span class="img__btn">image 1</span>, <span class="img__btn">image 2</span>, <span class="img__btn">image 3</span>]</p>

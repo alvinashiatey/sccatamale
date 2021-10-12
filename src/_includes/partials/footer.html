@@ -1,6 +1,7 @@
 <footer>
   <div class="footer__wrapper">
     <div class="footer__content">
+      {% if page.url == '/'%}
       <div class="about__scca">
         <p>
           The Savannah Centre for Contemporary Art (SCCA) is an artist-run
@@ -9,11 +10,12 @@
           cultural practices which emerged in the 20th Century. <br />
         </p>
       </div>
+      {% endif %}
       <div class="on-view__scca">
         <p>
           On view now: <br />
-          A Diagnosis of Time <br />
-          May 1–December 15, 2021
+          A Diagnosis of Time: Unlearn What You Have Learned <br />
+          April 30–November 3, 2021
         </p>
       </div>
       <div class="opening-times__scca">
