@@ -1,7 +1,7 @@
 export default function homeImage() {
   const imageBtn = document.querySelectorAll(".img__btn");
   const imageDiv = document.querySelectorAll(".images");
-  if (!imageBtn || !imageDiv) return;
+  if (!imageBtn.length || !imageDiv.length) return;
   const randomIndex = Math.floor(Math.random() * imageDiv.length);
   imageDiv[randomIndex].style.visibility = "visible";
   const hideImages = () => {
