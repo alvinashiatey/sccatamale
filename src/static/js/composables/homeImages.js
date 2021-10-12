@@ -15,10 +15,10 @@ export default function homeImage() {
       hideImages();
       imageDiv[i].style.visibility = "visible";
     });
-    btn.addEventListener("mouseout", (e) => {
-      imageDiv[i].style.visibility = "hidden";
-      imageDiv[randomIndex].style.visibility = "visible";
-    });
+    // btn.addEventListener("mouseout", (e) => {
+    //   imageDiv[i].style.visibility = "hidden";
+    //   imageDiv[randomIndex].style.visibility = "visible";
+    // });
   });
 
   var isMobile = false; //initiate as false

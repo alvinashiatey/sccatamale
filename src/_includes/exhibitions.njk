@@ -1,4 +1,4 @@
-{% extends "default.njk "%}
+{% extends "default.njk" %}
 
 {% block head %}
   <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
@@ -8,6 +8,7 @@
   <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
 {% endblock %}
 
+{% block content %}
 <div class="exhibition">
   <div class="exhibition__wrapper">
     <div>
@@ -16,3 +17,4 @@
     <article>{{ content | safe }}</article>
   </div>
 </div>
+{% endblock %}

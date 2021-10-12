@@ -33,7 +33,9 @@
   <div class="wrapper">
     {% include "./partials/navbar.html" %} 
     <main>
+    {% block content %}
       {{ content | safe }} 
+    {% endblock %}
     </main>
     {% include "./partials/footer.html" %}
   </div>
