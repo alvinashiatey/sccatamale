@@ -14,8 +14,11 @@
       <div class="on-view__scca">
         <p>
           On view now: <br />
-          A Diagnosis of Time: Unlearn What You Have Learned <br />
-          April 30–November 3, 2021
+          {% for exhibition in collections.exhibition | reverse %} {% if
+          loop.index <= 1 %} {{ exhibition.data.title }}<br />
+          {{ exhibition.data.date.toUTCString() | dateStructure("start") }} - {{
+          exhibition.data.end.toUTCString() | dateStructure("end") }}<br />
+          {% endif %} {% endfor %}
         </p>
       </div>
       <div class="opening-times__scca">
@@ -37,3 +40,11 @@
     </div>
   </div>
 </footer>
+
+{% for exhibition in collections.exhibition | reverse %} {% if loop.index <= 1
+%}
+<script>
+  const CURRENT_EXHIBITION_DATE = "{{ exhibition.data.date }}";
+  const CURRENT_EXHIBITION_END = "{{ exhibition.data.end }}";
+</script>
+{% endif %} {% endfor %}

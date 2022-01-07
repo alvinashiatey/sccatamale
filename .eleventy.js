@@ -58,6 +58,12 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  //Eleventy Filters
+  eleventyConfig.addNunjucksFilter(
+    "dateStructure",
+    require("./src/utils/dateStructure.js")
+  );
+
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
