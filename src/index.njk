@@ -9,26 +9,14 @@ pageCriticalStyles:
 
 <div class="images__container">
   <div class="images">
-    <img src="/static/img/image 1.png" alt="scca">
-  </div>
-  <div class="images">
-    <img src="/static/img/image 2.png" alt="scca">
-  </div>
-  <div class="images">
-    <img src="/static/img/image 3.png" alt="scca">
-  </div>
-  <div class="images">
-    <img src="/static/img/image 4.png" alt="scca">
-  </div>
-  <div class="images">
-    <img src="/static/img/image 5.png" alt="scca">
+    <img src="/static/img/homepage/image 1.png" alt="scca">
   </div>
 </div>
 
 <div class="home">
   <div class="home__container">
     <div class="on-view">
-      {% for exhibition in collections.exhibition %}
+      {% for exhibition in collections.exhibition | reverse %}
         {% if loop.index <= 1 %}
           <div class="on-view__content">
             <a href="{{ exhibition.url }}" target="_blank">
@@ -48,6 +36,6 @@ pageCriticalStyles:
 
   </div>
   <div class="home__images">
-    <p>[<span class="img__btn">image 1</span>, <span class="img__btn">image 2</span>, <span class="img__btn">image 3</span>, <span class="img__btn">image 4</span>, <span class="img__btn">image 5</span>]</p>
+    <p>[<span class="img__btn">image 1</span>]</p>
   </div>
 </div>
