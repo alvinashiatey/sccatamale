@@ -75,11 +75,16 @@
           </div>
           <div class="program__container">
             <ul>
-              {% for exhibition in collections.exhibition %}
+              {% for exhibition in collections.exhibition | reverse %}
               <li>
                 <h2>
                   <a href="{{exhibition.url}}">{{exhibition.data.title}}</a>
                 </h2>
+                <span
+                  >{{exhibition.data.date.toUTCString() |
+                  dateStructure("start")}} - {{exhibition.data.end.toUTCString()
+                  | dateStructure("end")}}</span
+                >
                 <p>{{exhibition.data.description | truncate(400)}}</p>
               </li>
               {% endfor %}
