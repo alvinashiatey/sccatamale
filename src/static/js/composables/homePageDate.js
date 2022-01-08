@@ -1,6 +1,7 @@
 import { DateTime } from "luxon";
 
 export default function homePageDate() {
+  const viewState = document.getElementById("view__state");
   const currentDate = document.getElementById("current-date");
   const openStateHtml = document.getElementById("open-state");
   if (!currentDate) return;
@@ -40,6 +41,7 @@ export default function homePageDate() {
     // use requestAnimationFrame to update the date every frame
     requestAnimationFrame(homePageDate);
   } else {
+    viewState.textContent = "Upcoming:";
     openStateHtml.textContent = `Currently ${openingState[1]}`;
   }
 }

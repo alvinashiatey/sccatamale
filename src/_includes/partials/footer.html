@@ -13,7 +13,7 @@
       {% endif %}
       <div class="on-view__scca">
         <p>
-          On view now: <br />
+          <span id="view__state">On view now:</span><br />
           {% for exhibition in collections.exhibition | reverse %} {% if
           loop.index <= 1 %} {{ exhibition.data.title }}<br />
           {{ exhibition.data.date.toUTCString() | dateStructure("start") }} - {{
