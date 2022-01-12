@@ -14,7 +14,13 @@
     <div>
       <h1>{{title}}</h1>
     </div>
-    <article>{{ content | safe }}</article>
+    <div class="article">
+      <div class="article__content">
+        <article>
+          {% markdown %}{{ content | safe }}{% endmarkdown %}
+        </article>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

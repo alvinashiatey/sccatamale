@@ -1,6 +1,7 @@
 .exhibition {
   padding-inline: 1em;
   color: #fefefe;
+  margin-block-end: 3rem;
   h1 {
     font-size: 3rem;
     padding-bottom: 1rem;
@@ -15,8 +16,12 @@
     p:last-child {
       text-indent: 0;
     }
-    @media screen and (max-width: 40em) {
+    @media screen and (max-width: 60em) {
       columns: 1;
     }
   }
+}
+
+.wrapper {
+  overflow: auto;
 }

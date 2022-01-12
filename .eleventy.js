@@ -2,6 +2,7 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -25,6 +26,20 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) =>
     yaml.safeLoad(contents)
   );
+
+  // Disable whitespace-as-code-indicator, which breaks a lot of markup
+  const configuredMdLibrary = markdownIt({ html: true })
+    .disable("code")
+    .use(require("markdown-it-footnote"));
+  eleventyConfig.setLibrary("md", configuredMdLibrary);
+
+  const md = new markdownIt({ html: true }).disable("code");
+
+  eleventyConfig.addPairedShortcode("markdown", (content) => {
+    return md.render(content);
+  });
+
+  eleventyConfig.setUseGitIgnore(false);
 
   // BrowserSync Watch files
   eleventyConfig.setWatchThrottleWaitTime(695);
