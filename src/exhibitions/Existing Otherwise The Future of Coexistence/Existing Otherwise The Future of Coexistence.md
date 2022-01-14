@@ -1,9 +1,10 @@
 ---
 title: "Existing Otherwise The Future of Coexistence"
 description: "The innovative exhibition and re-schooling programme 'Existing Differently I Existing Otherwise' will be launched by a hybrid curatorial team of performer Isabel Lewis (The Institute of Embodied Creative Practices, Callie's, Berlin), artist and founder of SCCA Ibrahim Mahama (Savannah Contemporary Art Centre, Tamale, Ghana) and Artistic Director Solvej Helweg Ovesen (Galerie Wedding and XO Curatorial Projects) 2021/2022. 'Existing Otherwise - Future of Coexistence' is the final part of the programme."
-date: 2021-01-14
-end: 2021-04-30
+date: 2022-01-14
+end: 2022-04-30
 ---
+
 # Press Release
 
 Savannah Centre for Contemporary Art, Redclay and Nkrumah Voli-ni Exhibition and Reschooling Programme 23.1.-23.4.2022.
@@ -30,4 +31,3 @@ SCCA Tamale is a contemporary art project space focusing on exhibition creation,
 Red Clay is a complex of studios. These are multi-purpose spaces for exhibitions, meetings, art talks, film screenings, workshops, etc. There are also dedicated spaces for a library, a cinema hall and decommissioned aircraft for teaching and learning purposes.
 
 Nkrumah Voli-ni is one of the many projects initiated by the future former President of Ghana, Dr Kwame Nkrumah, before his overthrow in 1966. It was originally intended to be a granary for karite nuts, but was completed. The facility was converted into a museum of science and culture.
-

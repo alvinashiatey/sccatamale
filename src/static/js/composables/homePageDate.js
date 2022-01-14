@@ -13,8 +13,15 @@ export default function homePageDate() {
   const dateString = dt.setLocale("en-GB").toLocaleString(f);
   currentDate.textContent = dateString;
 
-  let d = new Date(CURRENT_EXHIBITION_DATE);
-  let dEnd = new Date(CURRENT_EXHIBITION_END);
+  // A function that takes 'Thu, 14 Jan 2021 00:00:00 GMT' and returns date in UTC
+  const formatDate = (date) => {
+    const d = new Date(date);
+    const utcDate = new Date(d.getTime() + d.getTimezoneOffset() * 60000);
+    return utcDate;
+  };
+
+  let d = formatDate(CURRENT_EXHIBITION_DATE);
+  let dEnd = formatDate(`${CURRENT_EXHIBITION_END} `);
   let dNow = new Date();
   //check if the current date is on or after the exhibition start date and before the end date
   if (dNow >= d && dNow <= dEnd) {
