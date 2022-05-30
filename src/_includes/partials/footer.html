@@ -7,15 +7,16 @@
           The Savannah Centre for Contemporary Art (SCCA) is an artist-run
           project space, exhibition and research hub, cultural repository and
           artists’ residency located in Tamale, Ghana- dedicated to art and
-          cultural practices which emerged in the 20th Century. <br />
+          cultural practices which emerged in the 20th Century.<br />
         </p>
       </div>
       {% endif %}
-      <div class="on-view__scca">
+      <div class="on-view__scca checked">
         <p>
           <span id="view__state">On view now:</span><br />
           {% for exhibition in collections.exhibition | reverse %} {% if
-          loop.index <= 1 %} {{ exhibition.data.title }}<br />
+          loop.index
+          <= 1 %} {{ exhibition.data.title }}<br />
           {{ exhibition.data.date.toUTCString() | dateStructure("start") }} - {{
           exhibition.data.end.toUTCString() | dateStructure("end") }}<br />
           {% endif %} {% endfor %}
@@ -41,10 +42,8 @@
   </div>
 </footer>
 
-{% for exhibition in collections.exhibition | reverse %} {% if loop.index <= 1
-%}
-<script>
-  const CURRENT_EXHIBITION_DATE = "{{ exhibition.data.date.toUTCString()  }}";
-  const CURRENT_EXHIBITION_END = "{{ exhibition.data.end.toUTCString()  }}";
-</script>
-{% endif %} {% endfor %}
+{% for exhibition in collections.exhibition | reverse %} {% if loop.index <= 1 %} <script>
+  const CURRENT_EXHIBITION_DATE = "{{ exhibition.data.date.toUTCString() }}";
+  const CURRENT_EXHIBITION_END = "{{ exhibition.data.end.toUTCString() }}";
+  </script>
+  {% endif %} {% endfor %}

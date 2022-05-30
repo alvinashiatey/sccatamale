@@ -9,7 +9,7 @@ pageCriticalStyles:
 
 <div class="images__container">
   <div class="images">
-    <img src="/static/img/homepage/image 1.png" alt="scca">
+    {# <img src="/static/img/homepage/image 1.png" alt="scca"> #}
   </div>
 </div>
 
@@ -18,7 +18,7 @@ pageCriticalStyles:
     <div class="on-view">
       {% for exhibition in collections.exhibition | reverse %}
         {% if loop.index <= 1 %}
-          <div class="on-view__content">
+          <div class="on-view__content checked">
             <a href="{{ exhibition.url }}" target="_blank">
               <h2>{{ exhibition.data.title }}</h2>
             </a>
@@ -29,13 +29,13 @@ pageCriticalStyles:
     <div class="home-dynamic__content">  
       <h1>
         <span id="current-date"></span><br />
-        <span id="open-state"></span>.<br />
+        <span id="open-state"></span><span class="checked">.</span><br />
         <span id="reopening-time"></span>
       </h1>
     </div>
 
   </div>
   <div class="home__images">
-    <p>[<span class="img__btn">image 1</span>]</p>
+    {# <p>[<span class="img__btn">image 1</span>]</p> #}
   </div>
 </div>

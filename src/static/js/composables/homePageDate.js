@@ -1,6 +1,7 @@
 import { DateTime } from "luxon";
 
 export default function homePageDate() {
+  const onView = document.querySelectorAll(".checked");
   const viewState = document.getElementById("view__state");
   const currentDate = document.getElementById("current-date");
   const openStateHtml = document.getElementById("open-state");
@@ -47,6 +48,11 @@ export default function homePageDate() {
     }
     // use requestAnimationFrame to update the date every frame
     requestAnimationFrame(homePageDate);
+  } else if (dNow > dEnd) {
+    onView.forEach((el) => {
+      el.setAttribute("hidden", "");
+    });
+    openStateHtml.textContent = `Currently ${openingState[1]}`;
   } else {
     viewState.textContent = "Upcoming:";
     openStateHtml.textContent = `Currently ${openingState[1]}`;
