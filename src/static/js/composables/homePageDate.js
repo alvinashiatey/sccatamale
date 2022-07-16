@@ -24,8 +24,8 @@ export default function homePageDate() {
   let d = formatDate(CURRENT_EXHIBITION_DATE);
   let dEnd = formatDate(`${CURRENT_EXHIBITION_END} `);
   let dNow = new Date();
-  //check if the current date is on or after the exhibition start date and before the end date
-  if (dNow >= d && dNow <= dEnd) {
+
+  const hourlyCheck = () => {
     if (dt.weekday < 6 || dt.weekday > 7) {
       if (dt.hour >= 20 || dt.hour < 11) {
         openStateHtml.textContent = `Currently ${openingState[1]}`;
@@ -46,13 +46,16 @@ export default function homePageDate() {
       openStateHtml.textContent = `Currently ${openingState[1]}`;
       reopeningTime.textContent = reopeningString;
     }
-    // use requestAnimationFrame to update the date every frame
     requestAnimationFrame(homePageDate);
+  };
+  //check if the current date is on or after the exhibition start date and before the end date
+  if (dNow >= d && dNow <= dEnd) {
+    hourlyCheck();
   } else if (dNow > dEnd) {
     onView.forEach((el) => {
       el.setAttribute("hidden", "");
     });
-    openStateHtml.textContent = `Currently ${openingState[1]}`;
+    hourlyCheck();
   } else {
     viewState.textContent = "Upcoming:";
     openStateHtml.textContent = `Currently ${openingState[1]}`;
