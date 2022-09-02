@@ -1,0 +1,48 @@
+{% extends "default.njk" %}
+
+{% block head %}
+        <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../favicon/site.webmanifest">
+        <link rel="mask-icon" href="../../favicon/safari-pinned-tab.svg" color="#5bbad5">
+{% endblock %}
+
+{% block content %}
+        <div class="event">
+                <div class="event__wrapper">
+                        <div>
+                                <h1>{{title}}</h1>
+                        </div>
+                        {% if images %}
+                                <div class="glide">
+                                        <div class="glide__track" data-glide-el="track">
+                                                <ul class="glide__slides">
+                                                        {% for image in images %}
+                                                                <li class="glide__slide">
+                                                                        <div class="image__wrapper">
+                                                                                <img class="glide__img" src="{{image | url}}" alt="">
+                                                                        </div>
+                                                                        <div class="caption">
+                                                                                <p>{{captions[loop.index -1]}}</p>
+                                                                        </div>
+                                                                </li>
+                                                        {% endfor %}
+                                                </ul>
+                                        </div>
+                                        <div class="glide__arrows" data-glide-el="controls">
+                                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                                        </div>
+                                </div>
+                        {% endif %}
+                        <div class="article">
+                                <div class="article__content">
+                                        <article>
+                                                {% markdown %}{{ content | safe }}{% endmarkdown %}
+                                        </article>
+                                </div>
+                        </div>
+                </div>
+        </div>
+{% endblock %}

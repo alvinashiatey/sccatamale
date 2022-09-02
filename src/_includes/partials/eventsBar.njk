@@ -1,0 +1,26 @@
+<div class="events__content">
+        <div class="view">
+                <div class="btns">
+                        <h1>EVENTS</h1>
+                        <h2 id="close__btn">[CLOSE]</h2>
+                </div>
+                <div class="view__container">
+                        <div id="events__view"></div>
+                        <ul>
+                                {% for event in collections.event | reverse %}
+                                        <li>
+                                                <h2>
+                                                        <a href="{{event.url}}">{{event.data.title}}</a>
+                                                </h2>
+                                                <span
+                  >{{event.data.date.toUTCString() |
+                  dateStructure("start")}} - {{event.data.end.toUTCString()
+                  | dateStructure("end")}}</span
+                >
+                                                <p>{{event.data.description | truncate(400)}}</p>
+                                        </li>
+                                {% endfor %}
+                        </ul>
+                </div>
+        </div>
+</div>

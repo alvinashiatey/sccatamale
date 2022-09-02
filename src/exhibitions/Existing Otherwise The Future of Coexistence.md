@@ -1,8 +1,23 @@
 ---
-title: "Existing Otherwise The Future of Coexistence"
-description: "The innovative exhibition and re-schooling programme 'Existing Differently I Existing Otherwise' will be launched by a hybrid curatorial team of performer Isabel Lewis (The Institute of Embodied Creative Practices, Callie's, Berlin), artist and founder of SCCA Ibrahim Mahama (Savannah Contemporary Art Centre, Tamale, Ghana) and Artistic Director Solvej Helweg Ovesen (Galerie Wedding and XO Curatorial Projects) 2021/2022. 'Existing Otherwise - Future of Coexistence' is the final part of the programme."
+title: Existing Otherwise The Future of Coexistence
+description: The innovative exhibition and re-schooling programme 'Existing
+  Differently I Existing Otherwise' will be launched by a hybrid curatorial team
+  of performer Isabel Lewis (The Institute of Embodied Creative Practices,
+  Callie's, Berlin), artist and founder of SCCA Ibrahim Mahama (Savannah
+  Contemporary Art Centre, Tamale, Ghana) and Artistic Director Solvej Helweg
+  Ovesen (Galerie Wedding and XO Curatorial Projects) 2021/2022. 'Existing
+  Otherwise - Future of Coexistence' is the final part of the programme.
+author: Alvin Ashiatey
 date: 2022-01-14
 end: 2022-04-30
+images:
+  - https://ucarecdn.com/f11e0794-8578-4721-8fae-343d663c94aa/image 1.png
+  - https://ucarecdn.com/8328bdcc-79bc-46b2-b341-a7cf289ebc2b/image 2.png
+  - https://ucarecdn.com/b5ddffa8-b784-44d5-87db-32794b4de0db/image 3.png
+  - https://ucarecdn.com/aa1b0bcb-cdb9-4c5f-97dc-effae217e492/image 4.png
+  - https://ucarecdn.com/c8173bde-5343-408a-8bfa-d440d5eaa434/image 5.png
+captions:
+  - Zanele Muholi
 ---
 
 # Press Release

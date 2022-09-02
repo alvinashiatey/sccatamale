@@ -1,8 +1,15 @@
 ---
 title: "A Diagnosis of Time: Unlearn What You Have Learned"
-description: "A Diagnosis of Time: Unlearn What You Have Learned is a collaborative effort of SCCA Tamale (Ghana), ARoS Aarhus Art Museum (Denmark) and the Ghana Museums and Monuments Board. On view from April 30 to November 3, 2021, it follows This is Not Africa: Unlearn What You Have Learned staged by ARoS earlier, on March 26, 2021, the first part of a two-fold exhibition which will run in synchrony."
+description: "A Diagnosis of Time: Unlearn What You Have Learned is a
+  collaborative effort of SCCA Tamale (Ghana), ARoS Aarhus Art Museum (Denmark)
+  and the Ghana Museums and Monuments Board. On view from April 30 to November
+  3, 2021, it follows This is Not Africa: Unlearn What You Have Learned staged
+  by ARoS earlier, on March 26, 2021, the first part of a two-fold exhibition
+  which will run in synchrony."
+author: Alvin Ashiatey
 date: 2020-04-30
 end: 2020-11-03
+image: /static/img/exhibitions/ancestors-in-the-network-0007.png
 ---
 
 # Curatorial statement. DoT: ULWYHL
