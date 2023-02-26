@@ -1,0 +1,24 @@
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -2,9 +2,6 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="9a344268-e2f6-45de-b451-daa68bb3d9a3" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/_site/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/admin/config.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/_site/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/js/main.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/_site/static/js/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/js/main.js.map" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/config.yml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -41,7 +38,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1662087057151</updated>
+       <workItem from="1662087060750" duration="405000" />
+-      <workItem from="1662087506039" duration="587000" />
++      <workItem from="1662087506039" duration="745000" />
+     </task>
+     <servers />
+   </component>
