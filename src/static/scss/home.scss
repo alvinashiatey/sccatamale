@@ -58,11 +58,10 @@
       &__content {
         border-bottom: 1px solid #fefefe;
         width: 70%;
-        margin: 0 auto;
         text-align: center;
         font-style: italic;
         padding-bottom: 2rem;
-        margin-bottom: 2rem;
+        margin: 0 auto 2rem;
         h2 {
           line-height: 1;
           @media screen and (max-width: 40em) {

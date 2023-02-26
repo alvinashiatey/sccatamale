@@ -30,6 +30,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.5.2",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",

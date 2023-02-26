@@ -1,0 +1,1 @@
+.events .events__content .view #events__view .calendar{display:grid;grid-template-columns:repeat(7,1fr);grid-auto-columns:1fr;gap:1rem}.events .events__content .view #events__view .calendar .day{width:100%;height:5rem;background-color:tomato}

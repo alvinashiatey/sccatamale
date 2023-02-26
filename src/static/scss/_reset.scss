@@ -40,7 +40,6 @@ html {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -60,6 +59,12 @@ a:not([class]) {
 img {
   max-width: 100%;
   display: block;
+  object-fit: contain;
+}
+
+.glide__img{
+  object-fit: contain !important;
+  object-position: left;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -69,6 +74,8 @@ textarea,
 select {
   font: inherit;
 }
+
+
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {

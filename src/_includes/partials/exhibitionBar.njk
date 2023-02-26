@@ -1,0 +1,25 @@
+<div class="exhibition__content">
+        <div class="view">
+                <div class="btns">
+                        <h1>EXHIBITIONS</h1>
+                        <h2 id="close__btn">[CLOSE]</h2>
+                </div>
+                <div class="view__container">
+                        <ul>
+                                {% for exhibition in collections.exhibition | reverse %}
+                                        <li>
+                                                <h2>
+                                                        <a href="{{exhibition.url}}">{{exhibition.data.title}}</a>
+                                                </h2>
+                                                <span
+                  >{{exhibition.data.date.toUTCString() |
+                  dateStructure("start")}} - {{exhibition.data.end.toUTCString()
+                  | dateStructure("end")}}</span
+                >
+                                                <p>{{exhibition.data.description | truncate(400)}}</p>
+                                        </li>
+                                {% endfor %}
+                        </ul>
+                </div>
+        </div>
+</div>

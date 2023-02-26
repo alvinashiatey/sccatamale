@@ -1,11 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a344268-e2f6-45de-b451-daa68bb3d9a3" name="Changes" comment="">
+    <list default="true" id="5dbbfaa6-1dd0-4421-a8c7-a20aeace7030" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/alvinashiatey.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/events/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/images/exhibitions/image 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/images/exhibitions/image 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/images/exhibitions/image 3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/images/exhibitions/image 4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/images/exhibitions/image 5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/static/css/eventBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/static/css/events.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_data/homepageCarosel.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_includes/css/event.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_includes/css/page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_includes/events.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_includes/partials/eventsBar.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_includes/partials/exhibitionBar.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_includes/partials/menuBar.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/events/events.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/events/test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exhibitions/src/static/img/exhibitions/ancestors-in-the-network-0007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/exhibitions/image 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/exhibitions/image 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/exhibitions/image 3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/exhibitions/image 4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/img/exhibitions/image 5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/js/composables/eventsBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/js/composables/exhibitionBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/js/composables/glideCarosel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/js/composables/menuBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/scss/eventBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/scss/page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/admin/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/exhibitions/Existing Otherwise The Future of Coexistence/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/exhibitions/Existing Otherwise The Future of Coexistence/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/my-first-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/my-first-post/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/my-third-big-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/my-third-big-post/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/second-post/._index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/second-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/second-post/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/this-is-latest-post/._index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/this-is-latest-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/this-is-latest-post/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/static/js/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/js/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/._sass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/sass.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulp-tasks/sass.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/._article" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/._posts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_data/._navigation.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_data/navigation.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/._article.njk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/._exhibitions.njk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/._posts.njk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/article.njk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/css/._exhibition.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/css/critical.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/css/critical.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/css/exhibition.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/css/exhibition.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/exhibitions.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/exhibitions.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/partials/._navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/partials/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/posts.njk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/._config.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/article/._index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/article/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/._A Diagnosis of Time: Unlearn What You Have Learned" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/._Existing Otherwise The Future of Coexistence" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/._exhibitions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/._A Diagnosis of Time: Unlearn What You Have Learned.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/._img" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/A Diagnosis of Time: Unlearn What You Have Learned.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/._image 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/._image 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/._image 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/._image 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/._image 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/image 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/img/exhibitions/image 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/image 2.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/img/exhibitions/image 2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/image 3.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/img/exhibitions/image 3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/image 4.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/img/exhibitions/image 4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/A Diagnosis of Time: Unlearn What You Have Learned/img/image 5.png" beforeDir="false" afterPath="$PROJECT_DIR$/_site/static/img/exhibitions/image 5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/Existing Otherwise The Future of Coexistence/._Existing Otherwise The Future of Coexistence.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/Existing Otherwise The Future of Coexistence/Existing Otherwise The Future of Coexistence.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/exhibitions/Existing Otherwise The Future of Coexistence.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exhibitions/exhibitions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/exhibitions/exhibitions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/._my-first-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/._my-third-big-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/._posts.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/._second-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/._this-is-latest-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/my-first-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/my-third-big-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/posts.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/second-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/posts/this-is-latest-post.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/js/._main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/js/composables/._sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/js/composables/sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/.__reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/._about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/._critical.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/._exhibition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/._home.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/scss/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/scss/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/critical.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/scss/critical.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/exhibition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/scss/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/scss/home.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,15 +132,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

@@ -1,7 +1,5 @@
 {
-    "layout": "exhibitions",
-    "tags": [
-        "exhibition"
-    ],
-    "pageCriticalStyles":["css/exhibition.css"]
+  "layout": "exhibitions",
+  "tags": ["exhibition"],
+  "pageCriticalStyles": ["css/page.css"]
 }
