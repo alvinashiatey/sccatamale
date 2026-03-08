@@ -2,8 +2,15 @@
 	import logo from '$lib/assets/icon.svg';
 	import Carousel from '$lib/components/Carousel.svelte';
 	import BackgroundEffect from '$lib/components/BackgroundEffect.svelte';
+	import Header from '$lib/components/layout/Header.svelte';
 	import exhibitionDataRaw from '$lib/events/onView/data.json';
 	import { onMount } from 'svelte';
+	import { createSEOData } from '$lib/seo';
+	const seoData = createSEOData({
+		image: '',
+		title: 'SCCA',
+		url: 'https://sccatamale.org'
+	});
 
 	const data = (exhibitionDataRaw as any).default || exhibitionDataRaw;
 
@@ -130,6 +137,7 @@
 	});
 </script>
 
+<Header {...seoData} />
 <BackgroundEffect visible={isHeaderHovered} />
 <div class="container">
 	<header
