@@ -183,7 +183,10 @@
 
 		<section class="contact">
 			<p>
-				For more information, please contact <a href="tel:+233372096210">+233 37 209 6210</a> or
+				For more information, please contact <a href="tel:+233372096210"
+					>+233&nbsp;37&nbsp;209&nbsp;6210</a
+				>
+				or
 				<a href="mailto:sccatamale@gmail.com">sccatamale@gmail.com</a>
 			</p>
 		</section>
