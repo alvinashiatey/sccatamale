@@ -51,7 +51,6 @@
 	let currentTimeStr = $state('');
 	let closingTimeStr = $state('');
 	let nextOpenStr = $state('');
-	let isHeaderHovered = $state(false);
 
 	function formatTime12h(h: number, m: number): string {
 		const period = h >= 12 ? 'PM' : 'AM';
@@ -138,16 +137,15 @@
 </script>
 
 <Header {...seoData} />
-<BackgroundEffect visible={isHeaderHovered} />
-<div class="container">
-	<header
-		onmouseenter={() => (isHeaderHovered = true)}
-		onmouseleave={() => (isHeaderHovered = false)}
-	>
-		<a href="/" onfocus={() => (isHeaderHovered = true)} onblur={() => (isHeaderHovered = false)}>
-			<img src={logo} alt="SvelteKit logo" />
-		</a>
-	</header>
+<div class="hero-area">
+	<BackgroundEffect />
+	<div class="container">
+		<header class="hero-header">
+			<a href="/">
+				<img src={logo} alt="SvelteKit logo" />
+			</a>
+		</header>
+	</div>
 </div>
 
 <Carousel
@@ -199,6 +197,20 @@
 			</p>
 		</section>
 
+		<section class="location">
+			<p>Location:</p>
+			<address>
+				<a
+					href="https://maps.app.goo.gl/2uxR2MW1xSALbaQb8"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Savannah Centre for Contemporary Art <br />QK 37 Montana ST <br />NT - 0131 - 3954
+					<br />Kpambegu <br />Tamale
+				</a>
+			</address>
+		</section>
+
 		<section class="collaboratore" hidden>
 			<p>
 				SCCA is built on community effort. Below is an ever-growing list of individuals who have
@@ -231,6 +243,23 @@
 		width: 150px;
 		max-width: 150px;
 		height: auto;
+	}
+
+	.hero-area:hover :global(.background-effect),
+	.hero-area:focus-within :global(.background-effect) {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	section.location address {
+		font-style: normal;
+	}
+
+	@media (hover: none) {
+		:global(.background-effect) {
+			opacity: 0;
+			transform: scale(1.05);
+		}
 	}
 
 	@media (max-width: 768px) {

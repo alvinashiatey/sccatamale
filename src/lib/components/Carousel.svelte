@@ -187,6 +187,11 @@
 			opacity: 1;
 			transform: translateY(0);
 		}
+
+		.carousel-slide:focus-within figcaption {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 
 	@media (hover: none) {

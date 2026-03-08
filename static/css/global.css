@@ -76,6 +76,11 @@ body {
     position: relative;
 }
 
+a:hover {
+    cursor: pointer;
+    color: #CC835C;
+}
+
 /* Helper classes */
 .container {
     width: 100%;
