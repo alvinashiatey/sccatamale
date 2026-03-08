@@ -1,0 +1,30 @@
+{
+	"title": "The Writings on the Wall",
+	"dateRange": "13th Sept. 2025 - 14th Mar. 2026",
+	"images": [
+		{
+			"image": "./images/1.png",
+			"caption": "Exhibition poster"
+		},
+		{
+			"image": "./images/2.jpg",
+			"caption": "Installation view of the exhibition at the SCCA"
+		},
+		{
+			"image": "./images/3.jpg",
+			"caption": "Installation view of the exhibition at the SCCA"
+		},
+		{
+			"image": "./images/4.jpg",
+			"caption": "Installation view of the exhibition at the SCCA"
+		},
+		{
+			"image": "./images/5.jpg",
+			"caption": "Installation view of the exhibition at the SCCA"
+		},
+		{
+			"image": "./images/6.jpg",
+			"caption": "Installation view of the exhibition at the SCCA"
+		}
+	]
+}

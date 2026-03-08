@@ -1,49 +1,36 @@
 {
-  "name": "SCCA_Tamale",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
-  "scripts": {
-    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
-    "build": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "@babel/core": "^7.15.5",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.5",
-    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
-    "@babel/preset-env": "^7.15.6",
-    "babel-loader": "^8.2.2",
-    "browser-sync": "^2.26.14",
-    "concurrently": "^6.3.0",
-    "cross-env": "^7.0.2",
-    "cssnano": "^4.1.10",
-    "html-minifier": "^4.0.0",
-    "js-yaml": "^3.14.0",
-    "luxon": "^2.0.2",
-    "markdown-it": "^12.3.2",
-    "markdown-it-footnote": "^3.0.3",
-    "sass": "^1.42.1",
-    "webpack": "^5.56.0",
-    "webpack-merge": "^5.8.0",
-    "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
-    "@glidejs/glide": "^3.5.2",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-terser": "^2.1.0",
-    "gulp-uglify": "^3.0.2"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  }
+	"name": "sccatamale",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@eslint/compat": "^2.0.2",
+		"@eslint/js": "^9.39.2",
+		"@sveltejs/adapter-auto": "^7.0.0",
+		"@sveltejs/enhanced-img": "^0.10.3",
+		"@sveltejs/kit": "^2.50.2",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"@types/node": "^22",
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.14.0",
+		"globals": "^17.3.0",
+		"prettier": "^3.8.1",
+		"prettier-plugin-svelte": "^3.4.1",
+		"svelte": "^5.51.0",
+		"svelte-check": "^4.4.2",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.54.0",
+		"vite": "^7.3.1"
+	}
 }
