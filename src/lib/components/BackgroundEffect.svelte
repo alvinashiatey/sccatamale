@@ -9,7 +9,7 @@
 
 		function handleScroll() {
 			const scrollY = window.scrollY;
-			const progress = Math.min(Math.max(scrollY / (viewportHeight * 0.5), 0), 1);
+			const progress = Math.min(Math.max(scrollY / viewportHeight, 0), 1);
 			node.style.setProperty('--scroll-opacity', String(progress));
 		}
 
