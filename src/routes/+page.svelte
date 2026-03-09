@@ -4,6 +4,7 @@
 	import BackgroundEffect from '$lib/components/BackgroundEffect.svelte';
 	import Header from '$lib/components/layout/Header.svelte';
 	import exhibitionDataRaw from '$lib/events/onView/data.json';
+	import collaboratorsData from '$lib/data/collaborators.json';
 	import { onMount } from 'svelte';
 	import { createSEOData } from '$lib/seo';
 	const seoData = createSEOData({
@@ -12,6 +13,16 @@
 		url: 'https://sccatamale.org'
 	});
 
+	function shuffle<T>(array: T[]): T[] {
+		let arr = array.slice();
+		for (let i = arr.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[arr[i], arr[j]] = [arr[j], arr[i]];
+		}
+		return arr;
+	}
+
+	const collaborators = shuffle(collaboratorsData.data);
 	const data = (exhibitionDataRaw as any).default || exhibitionDataRaw;
 
 	// Automatically find and enhance all images in the onView/images directory
@@ -214,11 +225,16 @@
 			</address>
 		</section>
 
-		<section class="collaboratore" hidden>
+		<section class="collaborators">
 			<p>
 				SCCA is built on community effort. Below is an ever-growing list of individuals who have
 				collaborated with and supported us, presented in no hierarchical order
 			</p>
+			<ul class="names">
+				{#each collaborators as name}
+					<li>{name}</li>
+				{/each}
+			</ul>
 		</section>
 	</div>
 </div>
@@ -229,7 +245,7 @@
 		flex-direction: column;
 		gap: 1rem;
 		width: 100%;
-		max-width: 800px;
+		max-width: 1000px;
 		padding: 2rem 0;
 	}
 
@@ -254,6 +270,18 @@
 		transform: scale(1);
 	}
 
+	section.collaborators ul.names {
+		margin-top: 1rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 1rem;
+	}
+
+	section.collaborators ul.names li {
+		break-inside: avoid;
+		white-space: nowrap;
+	}
+
 	section.location address {
 		font-style: normal;
 	}
@@ -273,6 +301,10 @@
 
 		header img {
 			max-width: 120px;
+		}
+
+		section.collaborators ul.names {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
