@@ -227,8 +227,8 @@
 
 		<section class="collaborators">
 			<p>
-				SCCA is built on community effort. Below is an ever-growing list of individuals who have
-				collaborated with and supported us, presented in no hierarchical order
+				SCCA is built on community collaboration. Below is an ever-growing list of individuals who
+				have collaborated with and supported us, presented in no particular order
 			</p>
 			<ul class="names">
 				{#each collaborators as name}
