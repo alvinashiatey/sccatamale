@@ -293,13 +293,6 @@
 		font-style: normal;
 	}
 
-	@media (hover: none) {
-		:global(.background-effect) {
-			opacity: 0;
-			transform: scale(1.05);
-		}
-	}
-
 	@media (max-width: 768px) {
 		.content {
 			gap: 1.5rem;
