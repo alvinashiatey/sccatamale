@@ -252,7 +252,8 @@
 
 	header {
 		width: fit-content;
-		padding: 2rem 0;
+		padding-inline: 0;
+		padding-block: 2rem 1rem;
 	}
 
 	header a {
