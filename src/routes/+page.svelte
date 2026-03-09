@@ -234,6 +234,7 @@
 				{#each collaborators as name}
 					<li>{name}</li>
 				{/each}
+				<li>...</li>
 			</ul>
 		</section>
 	</div>
