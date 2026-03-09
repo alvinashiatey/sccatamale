@@ -10,6 +10,7 @@
     --color-primary-mid: rgb(96, 87, 0);
     --color-primary-dark: rgb(55, 56, 0);
     --color-secondary: #181818;
+    --color-tertiary: #cc835c;
 
     --font-color-primary: rgb(188, 146, 0);
     /* Default static color */
@@ -76,9 +77,13 @@ body {
     position: relative;
 }
 
+a {
+    transition: opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)
+}
+
 a:hover {
     cursor: pointer;
-    color: #CC835C;
+    color: var(--color-tertiary);
 }
 
 /* Helper classes */

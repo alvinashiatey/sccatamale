@@ -281,6 +281,12 @@
 	section.collaborators ul.names li {
 		break-inside: avoid;
 		white-space: nowrap;
+		color: var(--color-tertiary);
+		transition: color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+	}
+
+	section.collaborators ul.names li:hover {
+		color: var(--color-secondary);
 	}
 
 	section.location address {

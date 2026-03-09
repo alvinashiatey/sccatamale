@@ -159,7 +159,7 @@
 	}
 
 	.carousel-slide :global(img) {
-		width: fit-content;
+		width: 100%;
 		height: 70vh;
 		display: block;
 		object-fit: contain;
@@ -169,7 +169,8 @@
 		margin-top: var(--space-2);
 		font-family: var(--font-primary);
 		font-size: var(--font-size-sm);
-		color: var(--color-gray-500);
+		color: var(--color-tertiary);
+		opacity: 0.7;
 		line-height: var(--line-height-relaxed);
 		transition:
 			opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
@@ -209,7 +210,7 @@
 		padding-left: var(--site-left-padding);
 		padding-right: var(--container-padding);
 		font-family: var(--font-primary);
-		color: var(--color-gray-600);
+		color: var(--color-tertiary);
 	}
 
 	.exhibition-label {
@@ -221,7 +222,7 @@
 	}
 
 	.exhibition-date {
-		color: var(--color-gray-500);
+		color: var(--color-secondary);
 	}
 
 	@media (max-width: 768px) {
